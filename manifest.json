@@ -1,19 +1,22 @@
 {
-  "manifest_version": 3,
-  "name": "Borderify",
-  "version": "1.0",
-
-  "description": "Adiciona uma borda vermelha a todas as páginas da Web correspondentes a mozilla.org.",
-
-  "icons": {
-    "48": "icons/border-48.png"
+  "name": "Change My Cursor",
+  "description": "Change your cursor to any picture you like!",
+  "version": "2.0.0",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Change My Cursor!",
+    "default_icon": "img/cursor.png",
+    "default_popup": "popup.html"
   },
-
-  "content_scripts": [
+  "web_accessible_resources": [
     {
-      "matches": ["<all_urls>"],
-      "css": ["mouse.css"],
-      "js": ["mouse.js"]
+      "resources": ["img/*"],
+      "matches": ["*://*/*"]
     }
-  ]
+  ],
+  "manifest_version": 3
 }
