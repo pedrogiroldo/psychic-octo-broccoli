@@ -1,22 +1,13 @@
 {
-  "name": "Change My Cursor",
-  "description": "Change your cursor to any picture you like!",
-  "version": "2.0.0",
-  "permissions": [
-    "scripting",
-    "activeTab",
-    "storage"
-  ],
-  "action": {
-    "default_title": "Change My Cursor!",
-    "default_icon": "img/cursor.png",
-    "default_popup": "popup.html"
-  },
-  "web_accessible_resources": [
+  "manifest_version": 2,
+  "name": "Modo Giras",
+  "version": "1.0",
+  "description": "Transforma as imagens em giras.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
     {
-      "resources": ["img/*"],
-      "matches": ["*://*/*"]
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
     }
-  ],
-  "manifest_version": 3
+  ]
 }
