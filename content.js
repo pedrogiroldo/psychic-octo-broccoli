@@ -5,7 +5,7 @@ function numeroAleatorio (a, b) {
 
 // link das imagens aqui:
 const imagesGiras = [
-    
+    'https://c.files.bbci.co.uk/13FD/production/_99171150_peppapigpa.jpg'
 ]
 
 
