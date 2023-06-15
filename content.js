@@ -1,13 +1,13 @@
-function numeroAleatorio (a, b) {
-    return Math.floor(Math.random() * (b - a + 1)) + a
+function numeroAleatorio(a, b) {
+    return Math.floor(Math.random() * (b - a + 1)) + a;
 }
 
-
-// link das imagens aqui:
+// Caminhos relativos das imagens aqui:
 const imagesGiras = [
-    'https://c.files.bbci.co.uk/13FD/production/_99171150_peppapigpa.jpg'
-]
-
+    'caminho/para/imagem1.jpg',
+    'caminho/para/imagem2.jpg',
+    'caminho/para/imagem3.jpg'
+];
 
 function replaceImages() {
   const images = document.getElementsByTagName("img");
@@ -23,4 +23,3 @@ function activateGirasMode() {
 
 // Chamada da função principal
 activateGirasMode();
-
