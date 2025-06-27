@@ -3,7 +3,7 @@ function numeroAleatorio(a, b) {
 }
 
 // Caminhos relativos das imagens aqui:
-const imagesGiras = [
+const imgs = [
     'caminho/para/imagem1.jpg',
     'caminho/para/imagem2.jpg',
     'caminho/para/imagem3.jpg'
@@ -13,13 +13,13 @@ function replaceImages() {
   const images = document.getElementsByTagName("img");
   for (let i = 0; i < images.length; i++) {
     const image = images[i];
-    image.src = imagesGiras[numeroAleatorio(0, imagesGiras.length - 1)];
+    image.src = imgs[numeroAleatorio(0, imgs.length - 1)];
   }
 }
 
-function activateGirasMode() {
+function psychicOctoBroccoliMode() {
   replaceImages();
 }
 
 // Chamada da função principal
-activateGirasMode();
+psychicOctoBroccoliMode();
