@@ -1,13 +1,9 @@
 function numeroAleatorio(a, b) {
-    return Math.floor(Math.random() * (b - a + 1)) + a;
+  return Math.floor(Math.random() * (b - a + 1)) + a;
 }
 
-// Caminhos relativos das imagens aqui:
-const imgs = [
-    'caminho/para/imagem1.jpg',
-    'caminho/para/imagem2.jpg',
-    'caminho/para/imagem3.jpg'
-];
+// Caminhos das imagens usando chrome.runtime.getURL()
+const imgs = [chrome.runtime.getURL("images/imagem1.jpg")];
 
 function replaceImages() {
   const images = document.getElementsByTagName("img");
