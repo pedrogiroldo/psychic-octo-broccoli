@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Modo Giras",
+  "name": "psychic-octo-broccoli",
   "version": "1.0",
-  "description": "Transforma as imagens em giras.",
+  "description": "Transforma as imagens em psychic-octo-broccoli.",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
